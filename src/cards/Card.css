@@ -1,0 +1,59 @@
+.ActiveCard {
+    display: flex;
+    width: 16rem;
+    flex-direction: column;
+    height: 28rem;
+    border: 1px solid saddlebrown;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.Card {
+    display: flex;
+    width: 8rem;
+    flex-direction: column;
+    height: 14rem;
+    border: 1px solid saddlebrown;
+    margin-right: .125rem;
+    color: #fff;
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+}
+
+.Card:before {
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000bb;
+    position: absolute;
+}
+
+.Card:hover:before {
+    background-color: #000000aa;
+    transition: all .1s linear;
+}
+
+.Card > div {
+    padding: .5rem;
+    text-align: center;
+}
+
+.Card-header {
+    height: 2rem;
+    background-color: darkolivegreen;
+}
+
+.Card-body {
+    background-color: darkgoldenrod;
+    flex-grow: 1;
+}
+
+.Card-footer {
+    height: 3rem;
+    margin-top: auto;
+    background-color: darkolivegreen;
+}
