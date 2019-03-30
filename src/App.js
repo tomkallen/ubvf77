@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-
 import './App.css'
 import ActiveCard from './cards/ActiveCard'
 import Card from './cards/Card'
@@ -7,10 +6,10 @@ import Card from './cards/Card'
 class App extends Component {
   state = {
     data: [
-      {type: 'A', body: 'AA', footer: 'AAA'},
-      {type: 'B', body: 'BB', footer: 'BBB'},
-      {type: 'C', body: 'CC', footer: 'CCC'},
-      {type: 'D', body: 'DD', footer: 'DDD'}
+      { type: 'A', body: 'AA', footer: 'AAA' },
+      { type: 'B', body: 'BB', footer: 'BBB' },
+      { type: 'C', body: 'CC', footer: 'CCC' },
+      { type: 'D', body: 'DD', footer: 'DDD' }
     ]
   }
 
@@ -33,10 +32,7 @@ class App extends Component {
             {this.drawCards()}
           </div>
         </div>
-
         <div className="App-wrapper">
-
-
         </div>
       </div>
     )
