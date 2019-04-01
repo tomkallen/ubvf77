@@ -6,7 +6,8 @@ class ActionSet {
     this.actions = pickFew(actions[actor], 3)
   }
 
-  act(type){
+  act(num = 0){
+    console.log(`action ${num} is ran, it is ${this.actions[num].action}`)
 
   }
 }

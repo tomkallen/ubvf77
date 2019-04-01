@@ -16,6 +16,7 @@ class App extends Component {
       ]
     }
     this.card = new Burgher()
+    this.card.act()
     console.log(this.card)
 
   }
