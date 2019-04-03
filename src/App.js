@@ -3,7 +3,9 @@ import './App.css'
 import ActiveCard from './cards/ActiveCard'
 import Card from './cards/Card'
 import Burgher from './classes/Burgher'
+import { observer } from 'mobx-react'
 
+@observer
 class App extends Component {
   constructor (props) {
     super(props)
@@ -29,9 +31,17 @@ class App extends Component {
   drawActiveCard = () => <ActiveCard data={this.state.data[0]}/>
 
   render () {
+    const {freedom, militiaCount, armyCount, food, security, payment} = this.props.store
     return (
       <div className="App">
-        <div className="Pane Left">left</div>
+        <div className="Pane Left">
+          <span>food: {food}</span>
+          <span>freedom: {freedom}</span>
+          <span>militia: {militiaCount}</span>
+          <span>army: {armyCount}</span>
+          <span>security: {security}</span>
+          <span>payment: {payment}</span>
+        </div>
         <div className="Pane Center">
           {this.drawActiveCard()}
         </div>
